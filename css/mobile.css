@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/fraunces-v23-latin-900.woff2') format('woff2'),
+         url('../fonts/fraunces-v23-latin-900.woff') format('woff');
+}
+@font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/barlow-v12-latin-regular.woff') format('woff');
+}
+  @font-face {
+    font-family: "Barlow";
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/barlow-v12-latin-700italic.woff2') format('woff2'),
+         url('../fonts/barlow-v12-latin-700italic.woff') format('woff');
+}
+:root{
+    --main-text-black-color : #333D4B;
+    --main-black-bg-color: #2c343e;
+    --main-green-bg-colors: #0e8784;
+}
+  
+  /* GENERAL */
+  
+  html{
+    height: 100%;
+    box-sizing: border-box;
+}
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces", "Arial", sans-serif;
+    font-weight: 900;
+}
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  
+  /* CONTAINER */
+  
+  .container{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+  
+  /* STICKY-FOOTER */
+  .site-main{
+    flex-grow: 1;
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 40px 0;
+}
+.site-header__logo {
+    
+}
+.site-header__btn {
+    width: 16px;
+    height: 15px;
+    background-image: url("../images/3-pack.svg");
+    background-color: transparent;
+    border: 0;
+}
+.site-header__nav {
+    display: none;
+}
+.site-header__nav-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.site-header__list-items:not(:last-child) {
+    margin-right: 32px;
+}
+.site-header__items-link {
+    font-family: "Barlow";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    color: #83888F;
+    text-decoration: none;
+}
+.s1 {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/coffea-mobile-hero-bg.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+.s1__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 25px;
+}
+.s1__intro-title {
+    margin: 0 0 25px 0;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FEFCF7;
+}
+.s1__intro-text {
+    margin: 0 0 40px 0;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+.s1__intro-btn {
+    display: inline-block;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 16px 31px;
+    color: #FEFCF7;
+    text-decoration: none;
+    background-color: var(--main-green-bg-colors);
+    border-radius: 6px;
+}
+/* @media only screen and (max-width: 570px) {
+    .site-header {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        z-index: 5;
+        opacity: 1;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color:  rgba(254, 252, 247, 0.9);
+    }
+    .modal__show {
+        display: block;
+    }
+    .modal__box {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-top: 100px;
+    }
+    .modal-close-button {
+        position: absolute;
+        top: 20%;
+        right: 8%;
+        width: 14px;
+        height: 13px;
+        background-image: url("../images/close.svg");
+        background-size: cover;
+        background-color: transparent;
+        border: 0;
+    }
+    .modal__s1-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        list-style: none;
+    }
+    .modal__s1-items {
+        margin-bottom: 32px;
+    }
+    .modal__s1-link {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        text-decoration: none;
+        color: #333D4B;
+        
+    }
+    
+}
+
+
+.add-and-remove {
+    
+}
+.add-box {
+    display: none;
+}
+.add {
+
+}
+.remove-box {
+    display: block;
+}
+.remove {
+
+}
+ */
+
+@media only screen and (min-width: 570px){
+    .site-header__logo {
+        width: 236px;
+        height: 26px;
+    }
+    .site-header__nav {
+        display: block;
+    }
+    .site-header__btn {
+        display: none;
+    }
+    .s1__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 400px;
+        margin-left: 58px;
+    }
+    .s1__intro-title {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: start;
+    }
+    .s1__intro-text {
+        text-align: start;
+    }
+    .s1 {
+        background-image: url("../images/s1-tablet-bg.jpg");
+    }
+
+}
+@media only screen and (min-width: 870px){
+    .site-header__logo{
+        width: 236px;
+        height: 26px;
+    }
+    .site-header__items-link:hover {
+        color: #333D4B;
+    }
+    .s1 {
+        background-image: url("../images/s1-bg-desktop.jpg");
+    }
+    .s1__intro {
+        width: 500px;
+    }
+    .s1__intro-title {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    .s1__intro-text-box {
+        width: 440px;
+    }
+    .s1__intro-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .s1__intro-btn:hover {
+        background-color: #66D2CF;
+    }
+}
