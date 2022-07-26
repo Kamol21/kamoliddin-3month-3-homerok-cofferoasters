@@ -1,13 +1,13 @@
-var elModalOpenButton = document.querySelector(".site-header__btn");
-var elModal = document.querySelector(".modal");
+var elModalTogleButton = document.querySelector(".site-header__btn");
+var elModal = document.querySelector(".site-header__nav-box");
 
-elModalOpenButton.addEventListener("click", function(){
-  elModal.classList.add("modal__show");
+elModalTogleButton.addEventListener("click", function(){
+  elModal.classList.toggle("site-header__nav-show");
 })
 
 
-var elModalCloseButton = document.querySelector(".modal-close-button");
+// var elModalCloseButton = document.querySelector(".modal-close-button");
 
-elModalCloseButton.addEventListener("click" , function (){
-  elModal.classList.remove("modal__show");
-})
+// elModalTogleButton.addEventListener("click" , function (){
+//   elModal.classList.remove("modal__show");
+// })
