@@ -1,5 +1,5 @@
 var elModalTogleButton = document.querySelector(".site-header__btn");
-var elModal = document.querySelector(".site-header__nav-box");
+var elModal = document.querySelector(".site-header");
 
 elModalTogleButton.addEventListener("click", function(){
   elModal.classList.toggle("site-header__nav-show");
