@@ -2262,5 +2262,73 @@ only screen and (                min-resolution: 2dppx) {
     
     /* create plan page end */
 }
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.modal-show {
+    display: block;
 
+}
+.modal-box {
+    width: 561px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.modal-window{
+    background-color: #fff;
+    padding: 50px 30px 50px 30px;
+}
+.modal-h2 {
+    margin: 0px;
+    padding: 16px 0px 16px 30px;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;    
+    background-color: #2f3844;
+}
+.modal-h3 {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #83888F;    
+}
+.modal-p {
+    margin-bottom: 57px;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.modal-left-price {
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+.modal-close-button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding: 16px 64px;
+    background: #0A775F;
+    border-radius: 6px;
+    border: 0px;
+}
+.priceandbutton{
+    display: flex;
+    justify-content: space-between;
+
+}
 

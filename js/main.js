@@ -1,13 +1,13 @@
-var elModalTogleButton = document.querySelector(".site-header__btn");
-var elModal = document.querySelector(".site-header");
+var elModalOpenButton = document.querySelector(".plan-s3__buttom-box-button");
+var elModal = document.querySelector(".modal");
 
-elModalTogleButton.addEventListener("click", function(){
-  elModal.classList.toggle("site-header__nav-show");
+elModalOpenButton.addEventListener("click", function(){
+  elModal.classList.add("modal-show");
 })
 
 
-// var elModalCloseButton = document.querySelector(".modal-close-button");
+var elModalCloseButton = document.querySelector(".modal-close-button");
 
-// elModalTogleButton.addEventListener("click" , function (){
-//   elModal.classList.remove("modal__show");
-// })
+elModalCloseButton.addEventListener("click" , function (){
+  elModal.classList.remove("modal-show");
+})
