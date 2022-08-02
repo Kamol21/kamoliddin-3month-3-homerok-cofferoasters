@@ -739,7 +739,7 @@ only screen and (                min-resolution: 2dppx) {
     text-align: center;
     color: #FFFFFF;
 }
-.plan-s3 {
+.plan-s3__left-list {
     display: none;
 }
 .plan-s3-intro-box {
@@ -1456,7 +1456,7 @@ only screen and (                min-resolution: 2dppx) {
         text-align: start;
         color: #FFFFFF;
     }
-    .plan-s3 {
+    .plan-s3__left-list {
         display: none;
     }
     .plan-s3-intro-box {
@@ -2139,6 +2139,7 @@ only screen and (                min-resolution: 2dppx) {
         align-items: baseline;
     }
     .plan-s3__left-list {
+        display: block;
         max-width: 255px;
         padding-left: 0;
         list-style: none;
